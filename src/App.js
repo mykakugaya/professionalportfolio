@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
+import "./App.css";
 // import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <Navbar />
         <Switch>
           {/* <Route exact path="/">
             <Home />
@@ -27,8 +27,7 @@ function App() {
             {/* <Contact /> */}
           </Route>
         </Switch>
-        <Footer>Copyright 2020. Portfolio powered by React.
-        </Footer>
+        <Footer>Copyright 2020. Portfolio powered by React.</Footer>
       </Router>
     </div>
   );

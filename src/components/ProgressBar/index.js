@@ -67,7 +67,7 @@ QontoStepIcon.propTypes = {
 
 const ColorlibConnector = withStyles({
   alternativeLabel: {
-    top: 45
+    top: "80%"
   },
   active: {
     "& $line": {
@@ -148,7 +148,8 @@ ColorlibStepIcon.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "100%"
+    width: "100%",
+    padding: 0
   },
   button: {
     marginRight: theme.spacing(1)
@@ -160,7 +161,8 @@ const useStyles = makeStyles(theme => ({
   step: {
     fontSize: "0.7rem",
     textAlign: "center",
-    marginBottom: "10px"
+    marginBottom: "10px",
+    color: "#757575"
   }
 }));
 
@@ -168,7 +170,7 @@ function getSteps() {
   return ["Currently learning", "Some experience", "Very Experienced"];
 }
 
-export default function ProgressBar() {
+export default function ProgressBar(props) {
   const classes = useStyles();
   const steps = getSteps();
 
@@ -176,7 +178,7 @@ export default function ProgressBar() {
     <div className={classes.root}>
       <Stepper
         alternativeLabel
-        activeStep={1}
+        activeStep={props.level}
         connector={<ColorlibConnector />}
       >
         {steps.map(label => (
