@@ -5,7 +5,7 @@
 https://mykakugaya.github.io/professionalportfolio
 
 ## Description
-Includes my current resume, portfolio pieces, and past outstanding team projects that I have collaborated in. In addition, discloses my personal  infromation as well as my Github/LinkedIn profiles for contacting purposes.
+Includes my current resume, portfolio pieces, and past outstanding team projects that I have collaborated in. In addition, discloses my personal information as well as my Github/LinkedIn profiles for contacting purposes.
 
 ## License
 This project is licensed under the MIT license.

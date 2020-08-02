@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
@@ -14,20 +14,20 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <Home />
-          </Route>
-          <Route exact path="/about">
+          </Route> */}
+          <Route exact path="/">
             <About />
           </Route>
           <Route exact path="/portfolio">
-            <Portfolio />
+            {/* <Portfolio /> */}
           </Route>
           <Route exact path="/contact">
-            <Contact />
+            {/* <Contact /> */}
           </Route>
         </Switch>
-        <Footer>Copyright 2020. Application powered by React.
+        <Footer>Copyright 2020. Portfolio powered by React.
         </Footer>
       </Router>
     </div>
