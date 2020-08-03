@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Tab from "@material-ui/core/Tab";
@@ -7,7 +7,7 @@ import Tabs from "@material-ui/core/Tabs";
 import { Link } from "react-router-dom";
 // import Menu from "@material-ui/core/Menu";
 // import MenuItem from "@material-ui/core/MenuItem";
-// import "./nav.css"
+// import "./style.css"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,12 +28,11 @@ const useStyles = makeStyles(theme => ({
     margin: "0 !important"
   },
   link: {
-    textDecorationLine: "none",
+    textDecoration: "none",
     textDecorationColor: "black",
     margin: "0 !important"
   },
   activeTab: {
-    textDecorationLine: "none",
     color: "#e1bee7",
     textDecoration: "none",
     margin: "0 !important"
@@ -51,66 +50,41 @@ const useStyles = makeStyles(theme => ({
     textDecoration: "none"
   }
 }));
-const StyledTabs = withStyles({
-  indicator: {
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: "transparent",
-    "& > span": {
-      maxWidth: 40,
-      width: "100%",
-      backgroundColor: "#635ee7"
-    }
-  }
-})(props => <Tabs {...props} TabIndicatorProps={{ children: <span /> }} />);
-
-const StyledTab = withStyles(theme => ({
-  root: {
-    textAlign: "center",
-    textTransform: "none",
-    color: "#616161",
-    fontWeight: theme.typography.fontWeightRegular,
-    fontSize: theme.typography.pxToRem(13),
-    marginRight: theme.spacing(1),
-    "&:focus": {
-      opacity: 1
-    }
-  }
-}))(props => <Tab disableRipple {...props} />);
 
 export default function Navbar() {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = useState(false);
 
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
+  // const [anchorEl, setAnchorEl] = useState(false);
 
-  const handleClose = () => {
-    setAnchorEl(!anchorEl);
-  };
+  // const handleClick = event => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+
+  // const handleClose = () => {
+  //   setAnchorEl(!anchorEl);
+  // };
 
   //   const handleRedirectHome = () => {
   //     window.location.pathname = "";
   //   }
 
-  const handleRedirectAbout = () => {
-    window.location.pathname = "/";
-  };
+  // const handleRedirectAbout = () => {
+  //   window.location.pathname = "/";
+  // };
 
-  const handleRedirectPortfolio = () => {
-    window.location.pathname = "/portfolio";
-  };
+  // const handleRedirectPortfolio = () => {
+  //   window.location.pathname = "/portfolio";
+  // };
 
-  const handleRedirectContact = () => {
-    window.location.pathname = "/contact";
-  };
+  // const handleRedirectContact = () => {
+  //   window.location.pathname = "/contact";
+  // };
 
   return (
     <div className={classes.root}>
       <AppBar className={classes.appbar}>
         <Toolbar className={classes.padding}>
-          <StyledTabs className={classes.appbar}>
+          <Tabs className={classes.appbar}>
             {/* <IconButton
               aria-controls="simple-menu"
               aria-haspopup="true"
@@ -153,10 +127,10 @@ export default function Navbar() {
               </MenuItem>
             </Menu> */}
             {/* <Link className={classes.link, "navtab"} to="/">
-                <StyledTab className={window.location.pathname === "/" ? classes.activeTab : classes.tabs} label="Home"/>
+                <Tab className={window.location.pathname === "/" ? classes.activeTab : classes.tabs} label="Home"/>
             </Link> */}
             <Link className={(classes.link, "navtab")} to="/">
-              <StyledTab
+              <Tab
                 className={
                   window.location.pathname === "/"
                     ? classes.activeTab
@@ -166,7 +140,7 @@ export default function Navbar() {
               />
             </Link>
             <Link className={(classes.link, "navtab")} to="/portfolio">
-              <StyledTab
+              <Tab
                 className={
                   window.location.pathname === "/portfolio"
                     ? classes.activeTab
@@ -176,7 +150,7 @@ export default function Navbar() {
               />
             </Link>
             <Link className={(classes.link, "navtab")} to="/contact">
-              <StyledTab
+              <Tab
                 className={
                   window.location.pathname === "/contact"
                     ? classes.activeTab
@@ -185,7 +159,7 @@ export default function Navbar() {
                 label="Contact"
               />
             </Link>
-          </StyledTabs>
+          </Tabs>
         </Toolbar>
       </AppBar>
     </div>

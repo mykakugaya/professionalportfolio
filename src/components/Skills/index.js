@@ -6,18 +6,25 @@ import Grid from "@material-ui/core/Grid";
 const useStyles = makeStyles(theme => ({
   margin: {
     justifyContent: "center",
-    margin: "0 auto"
+    margin: "0 auto",
+    marginTop: "7%"
   },
   noMargin: {
     margin: 0,
     padding: 0
   },
   title: {
-    color: "#bbdefb"
+    color: "#bbdefb",
+    fontSize: "2.5rem"
   },
   and: {
     color: "#bdbdbd",
-    fontSize: "30px"
+    fontSize: "3rem"
+  },
+  name: {
+    margin: 0,
+    padding: 0,
+    fontSize: "0.8rem"
   }
 }));
 
@@ -34,7 +41,7 @@ function Skills(props) {
           return (
             <>
               <Grid item xs={2} className={classes.noMargin}>
-                <h6 className={classes.noMargin}>{skill.name}</h6>
+                <h6 className={classes.name}>{skill.name}</h6>
               </Grid>
               <Grid item xs={12}>
                 <ProgressBar level={skill.level} />

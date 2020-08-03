@@ -39,18 +39,22 @@ function About() {
 
   return (
     <Grid className={classes.margin}>
-      {/* Biography*/}
+      {/* Hero*/}
       <Grid item xs={12}>
+        {/* <Hero /> */}
+      </Grid>
+      {/* Biography*/}
+      <Grid item xs={12} id="bio">
         <Bio />
       </Grid>
       {/* Skills*/}
-      <Grid item xs={12} className={classes.center}>
+      <Grid item xs={12} className={classes.center} id="skills">
         <Paper className={classes.paper}>
           <Skills skills={skills} />
         </Paper>
       </Grid>
       {/* Resume*/}
-      <Grid item xs={12}>
+      <Grid item xs={12} id="resume">
         <Resume />
       </Grid>
     </Grid>

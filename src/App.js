@@ -7,8 +7,19 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element)
+        element.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div className="App">
       <Router>
