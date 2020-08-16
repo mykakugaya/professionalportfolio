@@ -5,11 +5,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import { Link } from "react-router-dom";
-// import Menu from "@material-ui/core/Menu";
-// import MenuItem from "@material-ui/core/MenuItem";
-// import "./style.css"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexShrink: 3
   },
@@ -23,19 +20,16 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center"
   },
   tabs: {
-    color: "black",
-    textDecoration: "none",
-    margin: "0 !important"
+    color: "gray",
+    textDecoration: "none"
   },
   link: {
     textDecoration: "none",
-    textDecorationColor: "black",
-    margin: "0 !important"
+    color: "white"
   },
   activeTab: {
-    color: "#e1bee7",
-    textDecoration: "none",
-    margin: "0 !important"
+    color: "#757de8",
+    textDecoration: "none"
   },
   padding: {
     paddingLeft: 0,
@@ -46,90 +40,22 @@ const useStyles = makeStyles(theme => ({
     display: "none"
   },
   menuItem: {
-    color: "black",
-    textDecoration: "none"
+    color: "black"
   }
 }));
 
 export default function Navbar() {
   const classes = useStyles();
 
-  // const [anchorEl, setAnchorEl] = useState(false);
-
-  // const handleClick = event => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-
-  // const handleClose = () => {
-  //   setAnchorEl(!anchorEl);
-  // };
-
-  //   const handleRedirectHome = () => {
-  //     window.location.pathname = "";
-  //   }
-
-  // const handleRedirectAbout = () => {
-  //   window.location.pathname = "/";
-  // };
-
-  // const handleRedirectPortfolio = () => {
-  //   window.location.pathname = "/portfolio";
-  // };
-
-  // const handleRedirectContact = () => {
-  //   window.location.pathname = "/contact";
-  // };
-
   return (
     <div className={classes.root}>
       <AppBar className={classes.appbar}>
         <Toolbar className={classes.padding}>
           <Tabs className={classes.appbar}>
-            {/* <IconButton
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
-            >
-              <Icon className={classes.menuButton} id="hamburger">
-                menu
-              </Icon>
-            </IconButton>
-            <Menu
-              id="simple-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <MenuItem
-                className={classes.menuItem}
-                onClick={handleRedirectAbout}
-              >
-                HOME
-              </MenuItem>
-              <MenuItem
-                className={classes.menuItem}
-                onClick={handleRedirectAbout}
-              >
-                ABOUT
-              </MenuItem>
-              <MenuItem
-                className={classes.menuItem}
-                onClick={handleRedirectPortfolio}
-              >
-                PORTFOLIO
-              </MenuItem>
-              <MenuItem
-                className={classes.menuItem}
-                onClick={handleRedirectContact}
-              >
-                CONTACT
-              </MenuItem>
-            </Menu> */}
-            {/* <Link className={classes.link, "navtab"} to="/">
+            {/* <Link className={classes.link} to="/">
                 <Tab className={window.location.pathname === "/" ? classes.activeTab : classes.tabs} label="Home"/>
             </Link> */}
-            <Link className={(classes.link, "navtab")} to="/">
+            <Link className={classes.link} to="/">
               <Tab
                 className={
                   window.location.pathname === "/"
@@ -139,7 +65,7 @@ export default function Navbar() {
                 label="About"
               />
             </Link>
-            <Link className={(classes.link, "navtab")} to="/portfolio">
+            <Link className={classes.link} to="/portfolio">
               <Tab
                 className={
                   window.location.pathname === "/portfolio"
@@ -149,7 +75,7 @@ export default function Navbar() {
                 label="Portfolio"
               />
             </Link>
-            <Link className={(classes.link, "navtab")} to="/contact">
+            <Link className={classes.link} to="/contact">
               <Tab
                 className={
                   window.location.pathname === "/contact"
