@@ -1,0 +1,28 @@
+.name{
+  font-size: 3rem;
+  margin-top:0;
+}
+
+.about{
+  font-size:3rem;
+  margin-bottom:5vh;;
+  margin-top:0;
+}
+
+.bio{
+  font-size:1rem;
+  max-width:75vw;
+  margin:0 auto;
+  text-align:left;
+  position:relative;
+}
+
+.image{
+  max-width: 25vw;
+  min-width: 10vw;
+  float:left;
+  position: relative;
+  border-radius: 2vw;
+  margin-left: 10vw;
+  margin-right: 2vw;
+}

@@ -1,0 +1,55 @@
+#navi {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  background-color:white;
+  padding-bottom:4vh;
+
+}
+#basic-navbar-nav {
+  margin: 0;
+}
+#toggle-icon {    
+  border: 0px;
+}
+.navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a:hover {
+  color: rgba(147, 191, 228, 0.699);
+}
+.inactive {
+  text-decoration: none !important;
+  margin: 0;
+  color: #082653;
+  padding: 1.5rem !important;
+  margin-right: 2rem !important;
+  margin-left: 2rem !important;
+  color: #082653;
+  font-size: 20px;
+  line-height: 23px;
+  font-variant: small-caps;
+  z-index: 5;
+}
+.activeLink ul > li > a {
+  font-weight: 700;
+  color: #c87edf;
+}
+
+.github{
+  width: 3.5vw;
+  border-radius: 8vw;
+  float: right;
+  margin-right: 1vw;
+}
+.linkedin{
+  width: 3.5vw;
+  border-radius: 8vw;
+  margin-right: 1vw;
+  float: right;
+}
+
+
+@media only screen and (min-device-width: 601px) and (max-width:1024px) {
+  .inactive {
+      margin-right: 1rem !important;
+      margin-left: 1rem !important;
+  }
+}
