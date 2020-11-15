@@ -1,0 +1,14 @@
+.prevBtn{
+    margin:0 auto;
+    margin-bottom:1vh;
+    border-radius: 1vw;
+    padding:0.4rem;
+    font-size:1.3rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.prevBtn:hover{
+    background-color: rgba(26, 26, 104, 0.726);
+    color:white;
+    border:1px solid white;
+}

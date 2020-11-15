@@ -1,0 +1,15 @@
+.resumepic{
+    width:80vw;
+    margin:0 auto;
+    margin-bottom:10vh;
+    border:1px solid rgb(80, 80, 80);
+    max-width:800px;
+    min-width:400px;
+}
+
+.restitle{
+    font-size:3rem;
+    margin-bottom:5vh;;
+    margin-top:5vh;
+    font-family: 'Spartan', sans-serif;
+}

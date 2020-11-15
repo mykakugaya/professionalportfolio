@@ -12,7 +12,7 @@ function Bio() {
         <Row>
         <img src={ProfilePic} className="image"/>
         <p className="bio">
-          Hello! I am a full-stack web developer with a biochemistry and
+          Hello! My name is Myka and I am a full-stack web developer with a biochemistry and
           psychology background, currently pursuing my BA degree in computer
           science at Boston University (graudating May 2022). I have received a
           certificate in full stack web development from the UCLA Extension

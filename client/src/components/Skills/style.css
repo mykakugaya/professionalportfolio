@@ -1,0 +1,29 @@
+.margin{
+    justify-content: center;
+    margin:0 auto;
+}
+
+.noMargin{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    color: #bbdefb;
+    font-size: 3rem;
+}
+.and {
+    color: #bdbdbd;
+    font-size: 4rem;
+  }
+.skill {
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-align:center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(80, 80, 80);
+}
+.bar{
+    margin-bottom:2vh;
+}

@@ -1,11 +1,20 @@
 .contact{
     font-size:1rem;
     margin-bottom:5vh;
+    font-family: 'Spartan', sans-serif;
+}
+.contactbackground{
+    background-color: rgba(147, 191, 228, 0.699);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:80vh;
+    padding-top:10vh;
 }
 
 .label{
     font-size:1rem;
     margin-right:1vw;
+    font-family: 'Spartan', sans-serif;
 }
 
 .form {
@@ -16,8 +25,8 @@
 }
 
 .form-group{
-    width:100%!important;
     margin:0 auto;
+    justify-content: center;
 }
 
 .label{
@@ -26,12 +35,42 @@
 
 #nameinput{
     margin-bottom:2vh;
+    width:17rem;
+    border-radius: 0.5vw;
+
 }
 
 #emailinput{
     margin-bottom:2vh;
+    width:17rem;
+    border-radius: 0.5vw;
+
+}
+
+#messageinput{
+    width:20rem;
+    border-radius: 0.5vw;
+    max-width:50vw;
+    max-height:30vh;
 }
 
 .sendBtn{
+    margin:0 auto;
+    margin-top:2vh;
     margin-bottom:10vh;
+    border-radius: 1vw;
+    padding:0.4rem;
+    font-family: 'Spartan', sans-serif;
+}
+
+.sendBtn:hover{
+    background-color: rgba(26, 26, 104, 0.726);
+    color:white;
+    border:1px solid white;
+}
+
+.sendBtn:active{
+    background-color: rgba(26, 26, 104, 0.726);
+    color:white;
+    border:1.5px solid white;
 }

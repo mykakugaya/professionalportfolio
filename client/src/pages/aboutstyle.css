@@ -8,7 +8,7 @@
 
 .arrow1 {
     display: block;
-    padding-top: 25vh;
+    padding-top: 20vh;
     padding-bottom: 2vh;
     width:2vw;
     margin: 0 auto;
@@ -41,7 +41,7 @@
 .name{
     font-family: 'Nunito', sans-serif;
     top:40vh;
-    background-color: rgba(235, 222, 180, 0.774);
+    background-color: rgba(238, 231, 238, 0.774);
     font-size:5rem;
     margin: 0 auto!important;
     text-align:center!important;
@@ -54,3 +54,15 @@
     margin:0 auto;
     margin-top:2vh;
 }
+
+@media only screen and (max-device-width:600px) {
+    .arrow1 {
+        display: none;
+    }
+    .arrow2 {
+        display: none;
+    }
+    .arrow3 {
+        display: none;
+    }
+  }

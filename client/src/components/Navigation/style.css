@@ -2,9 +2,9 @@
   text-align: left;
   padding: 0;
   margin: 0;
-  background-color:white;
+  background-color:rgba(238, 231, 238, 0.774);
   padding-bottom:4vh;
-
+  width:100vw!important;
 }
 #basic-navbar-nav {
   margin: 0;
@@ -15,7 +15,7 @@
 .navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a:hover {
   color: rgba(147, 191, 228, 0.699);
 }
-.inactive {
+a.inactive {
   text-decoration: none !important;
   margin: 0;
   color: #082653;
@@ -37,19 +37,18 @@
   width: 3.5vw;
   border-radius: 8vw;
   float: right;
-  margin-right: 1vw;
+  margin-right: 5vw;
 }
 .linkedin{
   width: 3.5vw;
   border-radius: 8vw;
-  margin-right: 1vw;
+  margin-right: 2vw;
   float: right;
 }
 
 
-@media only screen and (min-device-width: 601px) and (max-width:1024px) {
-  .inactive {
-      margin-right: 1rem !important;
-      margin-left: 1rem !important;
+@media only screen and (max-device-width: 550px) {
+  a.inactive {
+    margin: 0 auto!important;
   }
 }

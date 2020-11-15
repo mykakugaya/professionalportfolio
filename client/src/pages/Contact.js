@@ -34,7 +34,7 @@ export default class Contact extends Component {
       message: this.state.message
     }
 
-    axios.post("api/sendMail", data)
+    axios.post("/api/sendMail", data)
     .then((response)=>{
       this.setState({
         sent: true
@@ -56,11 +56,10 @@ export default class Contact extends Component {
   
   render() {
     return (
-      <div>
+      <Container className="contactbackground">
         <Jumbotron className="contact">
           <h1>Contact Myka Kugaya</h1>
         </Jumbotron>
-        {/* <Container className="form centertext"> */}
           <Form className="form" onSubmit={this.handleSubmit.bind(this)} action="/sendMail" method="POST">
             <Form.Group controlId="name">
               <Form.Label className="label">Name</Form.Label>          
@@ -101,12 +100,11 @@ export default class Contact extends Component {
               />
             </Form.Group>
             {this.state.sent ? <p>Message sent successfully.</p> : <p></p>}
-            <Button variant="primary" type="submit" className="sendBtn" onClick={this.handleSubmit.bind(this)}>
+            <Button variant="outline-primary" type="submit" className="sendBtn btn btn-outline-primary" onClick={this.handleSubmit.bind(this)}>
               Send Message
             </Button>
           </Form>
-        {/* </Container> */}
-      </div>
+      </Container>
     );
   }
 }

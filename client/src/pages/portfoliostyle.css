@@ -1,0 +1,51 @@
+.portfoliobackground{
+    background-color: rgba(147, 191, 228, 0.699);
+    background-repeat: repeat-y;
+    background-size:cover;
+    padding-top:5vh;
+}
+
+.porttitle{
+    font-size:2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:rgb(80, 80, 80);
+    margin:0 auto;
+    margin-bottom:1vh;
+}
+
+.portimage{
+    width:30vw;
+    max-width:500px;
+    border-radius: 1vw;
+}
+
+.imgborder{
+    border: 1px solid rgb(102, 102, 102);
+    background-color:rgb(102, 102, 102);
+}
+
+.portdesc{
+    max-width:45vw;
+    margin:0 auto;
+}
+
+.portfolio{
+    font-size:1rem;
+    font-family: 'Spartan', sans-serif;
+    color:black;
+}
+
+.addpadding{
+    padding:2rem;
+}
+
+.extrapaddingbottom{
+    padding-bottom:15vh;
+}
+
+
+@media only screen and (max-device-width:768px) {
+    .portdesc{
+        max-width:80vw;
+    }
+}
