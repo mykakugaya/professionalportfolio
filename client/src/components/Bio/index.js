@@ -6,11 +6,25 @@ import ProfilePic from "../../images/myka.JPG";
 function Bio() {
   return (
     <Container>
-      <Row>
+        <Row>
         <h2 className="about">About Me</h2>
         </Row>
         <Row>
-        <img src={ProfilePic} className="image"/>
+          <Col xs={12} sm={12} md={6} lg={6}>
+          <img src={ProfilePic} className="image"/>
+          </Col>
+          <Col  className="biolinks" xs={12} sm={12} md={6} lg={6}>
+            <p>Email: <a href="#">mykakug129@gmail.com</a>
+              <br></br>
+              School email: <a href="#">mkugaya@bu.edu</a>
+              <br></br>
+              Github: <a href="https://github.com/mykakugaya" target="_blank">mykakugaya</a>
+              <br></br>
+              LinkedIn: <a href="https://www.linkedin.com/in/mykakugaya/" target="_blank">mykakugaya</a>
+            </p>
+          </Col>
+        </Row>
+        <Row>
         <p className="bio">
           Hello! My name is Myka and I am a full-stack web developer with a biochemistry and
           psychology background, currently pursuing my BA degree in computer

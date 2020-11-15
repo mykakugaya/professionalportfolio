@@ -31,7 +31,7 @@ export default class PortfolioPreview extends Component {
 
     return (
       <div>
-        <Button type="button primary" className="prevBtn" onClick={() => this.setState({ isOpen: true })}>
+        <Button type="button outline-primary" className="prevBtn" onClick={() => this.setState({ isOpen: true })}>
           <ZoomInIcon/> Preview
         </Button>
 

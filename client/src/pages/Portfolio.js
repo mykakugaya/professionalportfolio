@@ -11,9 +11,9 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 function Portfolio() {
     return (
         <Container className="portfoliobackground">
-            <Jumbotron className="portfolio">
-              <h1>Current/Ongoing Projects</h1>
-            </Jumbotron>
+            <div className="portfolio">
+              <h1>Past&Ongoing Projects</h1>
+            </div>
             <Row>
                 <Col className="addpadding" xs={12} sm={12} md={6} lg={6}>
                     <img src={Jothefish} className="portimage imgborder"></img>

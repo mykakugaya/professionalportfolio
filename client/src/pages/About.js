@@ -45,7 +45,68 @@ function About() {
         <img className="arrow2" src={bluedownarrow} onClick={skillsSection.onClick} selected={skillsSection.selected}></img>
 
         <Section id="skills">
-            <Skills skills={skills}/>
+          <Container>
+            <Row>
+              <h2 className="skillstitle">
+                Skills <span className="and">&</span> Technologies
+              </h2>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[0].name} level={skills[0].level}/>
+              </Col>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[1].name} level={skills[1].level}/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[2].name} level={skills[2].level}/>
+              </Col>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[3].name} level={skills[3].level}/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[4].name} level={skills[4].level}/>
+              </Col>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[5].name} level={skills[5].level}/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[6].name} level={skills[6].level}/>
+              </Col>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[7].name} level={skills[7].level}/>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[8].name} level={skills[8].level}/>
+              </Col>
+              <Col xs={12} sm={12} md={6} lg={6}>
+                <Skills name={skills[9].name} level={skills[9].level}/>
+              </Col>
+            </Row>
+            {/* {skills.map(skill => {
+              if(skill.id%2==1){
+                skillcol =
+                (<>
+                <Col>
+                </>)
+              }
+              else {
+              return(
+                <>
+                <Skills name={skill.name} level={skill.level}/>
+                </Col>
+                </>
+              )}
+            })} */}
+          </Container>
         </Section>
         <img className="arrow3" src={bluedownarrow} onClick={resumeSection.onClick} selected={resumeSection.selected}></img>
         

@@ -5,6 +5,8 @@
     padding:0.4rem;
     font-size:1.3rem;
     font-family: 'Open Sans Condensed', sans-serif;
+    background-color:white;
+    color:black;
 }
 
 .prevBtn:hover{

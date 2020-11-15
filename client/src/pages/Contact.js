@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Jumbotron, Container, Form, Button } from "react-bootstrap";
 import axios from "axios";
 import "../pages/contactstyle.css";
+import SendIcon from '@material-ui/icons/Send';
 
 export default class Contact extends Component {
   state = {
@@ -57,9 +58,9 @@ export default class Contact extends Component {
   render() {
     return (
       <Container className="contactbackground">
-        <Jumbotron className="contact">
+        <div className="contact">
           <h1>Contact Myka Kugaya</h1>
-        </Jumbotron>
+        </div>
           <Form className="form" onSubmit={this.handleSubmit.bind(this)} action="/sendMail" method="POST">
             <Form.Group controlId="name">
               <Form.Label className="label">Name</Form.Label>          
@@ -101,7 +102,7 @@ export default class Contact extends Component {
             </Form.Group>
             {this.state.sent ? <p>Message sent successfully.</p> : <p></p>}
             <Button variant="outline-primary" type="submit" className="sendBtn btn btn-outline-primary" onClick={this.handleSubmit.bind(this)}>
-              Send Message
+              <SendIcon/> Send Message
             </Button>
           </Form>
       </Container>

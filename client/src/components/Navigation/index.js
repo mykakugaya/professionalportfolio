@@ -18,13 +18,15 @@ export default function Navigation () {
     </Link>
     <Link className="inactive" activeClassName="active" exact={true}  to="/contact">CONTACT
     </Link>
-    <a target="_blank" href="https://github.com/mykakugaya">
-      <img src={Github} className="github"/>
-    </a>
-    <a target="_blank" href="https://www.linkedin.com/in/mykakugaya/">
-      <img src={LinkedIn} className="linkedin"/>
-    </a>
     </Nav>
+    <div className="right">
+      <a target="_blank" href="https://github.com/mykakugaya">
+        <img src={Github} className="github"/>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/mykakugaya/">
+        <img src={LinkedIn} className="linkedin"/>
+      </a>
+    </div>
   </Navbar.Collapse>
 </Navbar>
     </div>
