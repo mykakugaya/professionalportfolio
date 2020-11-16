@@ -1,15 +1,28 @@
 .resumepic{
     width:80vw;
     margin:0 auto;
-    margin-bottom:10vh;
+    margin-bottom:20vh;
     border:1px solid rgb(80, 80, 80);
     max-width:800px;
-    min-width:400px;
+    min-width:300px;
 }
 
 .restitle{
-    font-size:3rem;
+    font-size:3.5rem;
     margin-bottom:5vh;;
     margin-top:5vh;
     font-family: 'Spartan', sans-serif;
+}
+
+.downloadpdf{
+    margin:0 auto;
+    width:100vw;
+}
+
+@media only screen and (max-device-width: 400px) {
+.restitle{
+    font-size:2.5rem;
+  }
+
+
 }

@@ -35,9 +35,9 @@
 }
 
 .portdesc{
-    max-width:45vw;
+    max-width:40vw;
     margin:0 auto;
-    margin-bottom:1vh;
+    margin-bottom:2vh;
 }
 
 .portfolio{
@@ -55,8 +55,21 @@
 }
 
 
-@media only screen and (max-device-width:768px) {
+@media only screen and (max-device-width:780px) {
     .portdesc{
-        max-width:80vw;
+        max-width:75vw;
+    }
+    .portimage{
+        width:50vw;
+    }
+    .porttitle{
+        text-align:center;
+        float:right;
+    }
+
+}
+@media only screen and (max-device-width:577px) {
+    .porttitle{
+        float:none;
     }
 }

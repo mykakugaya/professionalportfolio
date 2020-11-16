@@ -2,8 +2,8 @@ import React from "react";
 import "./style.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Github from "../../images/github-logo.png";
-import LinkedIn from "../../images/linkedin-logo.png";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export default function Navigation () {
   return (
@@ -20,11 +20,11 @@ export default function Navigation () {
     </Link>
     </Nav>
     <div className="right">
-      <a target="_blank" href="https://github.com/mykakugaya">
-        <img src={Github} className="github"/>
+      <a className="githubicon" target="_blank" href="https://github.com/mykakugaya">
+        <GitHubIcon className="largericon"/>
       </a>
-      <a target="_blank" href="https://www.linkedin.com/in/mykakugaya/">
-        <img src={LinkedIn} className="linkedin"/>
+      <a className="linkedinicon" target="_blank" href="https://www.linkedin.com/in/mykakugaya/">
+        <LinkedInIcon className="largericon"/>
       </a>
     </div>
   </Navbar.Collapse>

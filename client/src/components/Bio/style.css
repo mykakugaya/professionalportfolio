@@ -20,13 +20,34 @@
   font-size:1.2rem;
 }
 
-.image{
-  max-width: 25vw;
+.bioimage{
+  max-width: 30vw;
   min-width: 10vw;
-  float:left;
+  float:right;
   position: relative;
   border-radius: 2vw;
-  margin-left: 10vw;
-  margin-right: 3vw;
+  margin-right: 5vw;
   margin-bottom:2vh;
+}
+
+.bluetext{
+  color:#007bff;
+}
+
+
+@media only screen and (max-device-width: 400px) {
+  .about{
+    font-size:2.5rem;
+  }
+}
+@media only screen and (max-device-width: 767px) {
+  .bioimage{
+    float:left;
+    max-width:90vw;
+    padding: 0 0 5vw 5vw;
+  }
+  .biolinks{
+    text-align:center;
+    margin-top:0;
+  }
 }

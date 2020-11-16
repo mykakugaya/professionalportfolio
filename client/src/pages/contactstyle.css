@@ -1,5 +1,5 @@
 .contact{
-    font-size:1rem;
+    font-size:3rem;
     margin-bottom:5vh;
     font-family: 'Spartan', sans-serif;
     padding:0;
@@ -9,7 +9,7 @@
     background-color: rgba(147, 191, 228, 0.699);
     background-repeat: no-repeat;
     background-size:cover;
-    height:90vh;
+    height:100vh;
     padding-top:5vh;
     width:100vw!important;
     margin:0;
@@ -83,4 +83,34 @@
     background-color: rgba(26, 26, 104, 0.726);
     color:white;
     border:1.5px solid white;
+}
+
+@media only screen and (max-device-width:650px) {
+    .contact{
+        font-size:2rem;
+    }
+    #messageinput{
+        max-width:none;
+
+    }
+}
+@media only screen and (max-device-width:380px) {
+    .contact{
+        font-size:1.5rem;
+    }
+    .label{
+        font-size:0.8rem;
+    }
+    #nameinput{
+        max-width:90vw;
+    }
+    #emailinput{
+        max-width:90vw;
+    }
+    #messageinput{
+        max-width:90vw;
+    }
+    .sendBtn{
+        font-size:0.7rem;
+    }
 }

@@ -58,8 +58,8 @@ export default class Contact extends Component {
   render() {
     return (
       <Container className="contactbackground">
-        <div className="contact">
-          <h1>Contact Myka Kugaya</h1>
+        <div>
+          <h1 className="contact">Contact Myka Kugaya</h1>
         </div>
           <Form className="form" onSubmit={this.handleSubmit.bind(this)} action="/sendMail" method="POST">
             <Form.Group controlId="name">

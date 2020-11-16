@@ -2,6 +2,10 @@ import React from "react";
 import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ProfilePic from "../../images/myka.JPG";
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import SchoolIcon from '@material-ui/icons/School';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Bio() {
   return (
@@ -11,16 +15,16 @@ function Bio() {
         </Row>
         <Row>
           <Col xs={12} sm={12} md={6} lg={6}>
-          <img src={ProfilePic} className="image"/>
+          <img src={ProfilePic} className="bioimage"/>
           </Col>
           <Col  className="biolinks" xs={12} sm={12} md={6} lg={6}>
-            <p>Email: <a href="#">mykakug129@gmail.com</a>
+            <p><MailOutlineIcon/> Email: <span className="bluetext">mykakug129@gmail.com</span>
               <br></br>
-              School email: <a href="#">mkugaya@bu.edu</a>
+              <SchoolIcon/> School email: <span className="bluetext">mkugaya@bu.edu</span>
               <br></br>
-              Github: <a href="https://github.com/mykakugaya" target="_blank">mykakugaya</a>
+              <GitHubIcon/> Github: <a href="https://github.com/mykakugaya" target="_blank">mykakugaya</a>
               <br></br>
-              LinkedIn: <a href="https://www.linkedin.com/in/mykakugaya/" target="_blank">mykakugaya</a>
+              <LinkedInIcon/> LinkedIn: <a href="https://www.linkedin.com/in/mykakugaya/" target="_blank">mykakugaya</a>
             </p>
           </Col>
         </Row>
