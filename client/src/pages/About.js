@@ -3,12 +3,12 @@ import Skills from "../components/Skills";
 import Bio from "../components/Bio";
 import Resume from "../components/Resume";
 import { Container, Row, Col } from "react-bootstrap";
-import { Jumbotron, Button } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
 import "./aboutstyle.css";
 import {
   ScrollingProvider,
   useScrollSection,
-  Section,
+  Section
 } from 'react-scroll-section';
 import whitedownarrow from "../images/whitedownarrow.svg";
 import bluedownarrow from "../images/bluedownarrow.svg";
@@ -29,13 +29,14 @@ function About() {
   const aboutSection = useScrollSection('about');
   const skillsSection = useScrollSection('skills');
   const resumeSection = useScrollSection('resume');
-
+ 
   return (
     <Container className="main">
       <ScrollingProvider>
         <Jumbotron className="background">
             <h1 className="name">MYKA KUGAYA</h1>
             <h4 className="caption">— FULL-STACK WEB DEVELOPER —</h4>
+        
             <img className="arrow1" src={whitedownarrow} onClick={aboutSection.onClick} selected={aboutSection.selected}></img>
         </Jumbotron>
 
@@ -91,21 +92,6 @@ function About() {
                 <Skills name={skills[9].name} level={skills[9].level}/>
               </Col>
             </Row>
-            {/* {skills.map(skill => {
-              if(skill.id%2==1){
-                skillcol =
-                (<>
-                <Col>
-                </>)
-              }
-              else {
-              return(
-                <>
-                <Skills name={skill.name} level={skill.level}/>
-                </Col>
-                </>
-              )}
-            })} */}
           </Container>
         </Section>
         <img className="arrow3" src={bluedownarrow} onClick={resumeSection.onClick} selected={resumeSection.selected}></img>

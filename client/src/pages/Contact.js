@@ -35,7 +35,7 @@ export default class Contact extends Component {
       message: this.state.message
     }
 
-    axios.post("/api/sendMail", data)
+    axios.post("https://localhost:3001/api/sendMail", data)
     .then((response)=>{
       this.setState({
         sent: true
