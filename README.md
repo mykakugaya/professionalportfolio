@@ -14,4 +14,4 @@ This project is licensed under the MIT license.
 If you have any questions about this repo, please open an issue or contact mykakugaya directly at mykakug129@gmail.com.
 
 ## Screenshot
-![Professional Portfolio](./src/images/portfolioScreenshot.png)
+![Professional Portfolio](./client/src/images/portfolioScreenshot.png)
