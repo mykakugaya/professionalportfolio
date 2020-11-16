@@ -2,7 +2,7 @@
 
 # Professional Portfolio
 
-https://mykakugaya.github.io/professionalportfolio
+https://mykakugaya-portfolio.herokuapp.com/
 
 ## Description
 Includes my current resume, portfolio pieces, and past outstanding team projects that I have collaborated in. In addition, discloses my personal information as well as my Github/LinkedIn profiles for contacting purposes.
@@ -14,4 +14,4 @@ This project is licensed under the MIT license.
 If you have any questions about this repo, please open an issue or contact mykakugaya directly at mykakug129@gmail.com.
 
 ## Screenshot
-![Professional Portfolio](./src/images/portfolioScreenshot.jpg)
+![Professional Portfolio](./src/images/portfolioScreenshot.png)
