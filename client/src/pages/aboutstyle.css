@@ -2,8 +2,8 @@
     background-color: rgba(147, 191, 228, 0.699);
     background-repeat: no-repeat;
     background-size:cover;
-    height:90vh;
-    padding-top:32vh;
+    height:100vh;
+    padding-top:35vh;
     width:100vw!important;
     padding-left:0;
     padding-right:0;
@@ -16,7 +16,7 @@
 
 .arrow1 {
     display: block;
-    padding-top: 20vh;
+    padding-top: 25vh;
     padding-bottom: 2vh;
     width:3vw;
     margin: 0 auto;
@@ -36,22 +36,22 @@
     width:3vw;
     margin: 0 auto;
     margin-left:49vw;
-
 }
 
 #skills{
     width:100vw;
     margin:0 auto;
-    margin-top:2vh;
+    margin-top:5vh;
 }
 
 #about{
-    margin-top:2vh;
+    margin-top:5vh;
     margin-bottom:10vh;
     width:100vw;
 }
 
 #resume{
+    margin-top:10vh!important;
     width:100vw;
     margin-bottom:10vh;
 }

@@ -3,8 +3,9 @@
   padding: 0;
   margin: 0 auto;
   background-color:rgba(238, 231, 238, 0.774);
-  padding-bottom:2vh;
   width:100vw!important;
+  position:fixed;
+  z-index:5000;
 }
 #basic-navbar-nav {
   margin: 0;
@@ -47,7 +48,7 @@ a.inactive {
   margin-right:2vw;
 }
 .largericon{
-  font-size:2.5rem!important;
+  font-size:2rem!important;
 }
 
 .right{
