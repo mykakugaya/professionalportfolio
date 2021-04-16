@@ -37,6 +37,7 @@ export default class PortfolioPreview extends Component {
 
         {isOpen && (
           <Lightbox
+            className="popup"
             mainSrc={images[photoIndex]}
             nextSrc={images[(photoIndex + 1) % images.length]}
             prevSrc={images[(photoIndex + images.length - 1) % images.length]}

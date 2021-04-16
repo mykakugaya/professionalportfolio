@@ -22,12 +22,19 @@
     margin: 0 auto;
     margin-left:49vw;
 }
+.arrow1:hover{
+    width:3.3vw;
+}
+
 .arrow2 {
     display: block;
     width:3vw;
     margin: 0 auto;
     margin-left:49vw;
 
+}
+.arrow2:hover{
+    width:3.3vw;
 }
 .arrow3 {
     display: block;
@@ -36,6 +43,9 @@
     width:3vw;
     margin: 0 auto;
     margin-left:49vw;
+}
+.arrow3:hover{
+    width:3.3vw;
 }
 
 #skills{
